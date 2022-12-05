@@ -1,4 +1,40 @@
 $(document).ready(function(){
+     $('#c1').hover(function(){
+        if($(this).hasClass("active")){
+            $('#c1 .bott').slideUp(function(){
+                $('#c1 ').removeClass("active");    
+            });
+        }
+        else{
+            $('#c1 ').addClass("active");    
+            $('#c1 .bott').stop().slideDown();
+       }
+    });
+
+    $('#c2').hover(function(){
+        if($(this).hasClass("active")){
+            $('#c2 .bott').slideUp(function(){
+                $('#c2 ').removeClass("active");    
+            });
+        }
+        else{
+            $('#c2 ').addClass("active");    
+            $('#c2 .bott').stop().slideDown();
+       }
+    });
+
+    $('#c3').hover(function(){
+        if($(this).hasClass("active")){
+            $('#c3 .bott').slideUp(function(){
+                $('#c3').removeClass("active");    
+            });
+        }
+        else{
+            $('#c3 ').addClass("active");    
+            $('#c3 .bott').stop().slideDown();
+       }
+    });
+    
 
     $(window).scroll(function(){
         // sticky navbar on scroll script
