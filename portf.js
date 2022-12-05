@@ -1,5 +1,6 @@
 $(document).ready(function(){
-     $('#c1').hover(function(){
+    
+    $('#c1').hover(function(){
         if($(this).hasClass("active")){
             $('#c1 .bott').slideUp(function(){
                 $('#c1 ').removeClass("active");    
@@ -34,7 +35,7 @@ $(document).ready(function(){
             $('#c3 .bott').stop().slideDown();
        }
     });
-    
+
 
     $(window).scroll(function(){
         // sticky navbar on scroll script
