@@ -109,3 +109,94 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// ----------------------  for sending messeges ---------------------
+
+
+
+
+
+function sendmail() {
+
+    var name = $('#Name').val();
+    var email = $('#Email').val();
+    var subject = $('#Subject').val();
+    var message = $('#Message').val();
+
+    // var body = $('#body').val();
+
+    var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+    //console.log(name, phone, email, message);
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "portfolio273@gmail.com",
+        Password: "624B386D0C198599B8D94B768D3AF583D714",
+        To: 'portfolio273@gmail.com',
+        From: 'portfolio273@gmail.com',
+        Subject: "New message on contact from " + name,
+        Body: Body
+    }).then(
+        message => {
+            //console.log (message);    
+            if (message == 'OK') {
+                console.log("Success")
+                alert('Your mail has been send. Thank you for connecting.');
+            }
+            else {
+                console.error(message);
+                alert('There is error at sending message. ')
+
+            }
+
+        }
+    );
+
+
+
+}// ----------------------  for sending messeges ---------------------
+
+
+
+
+
+function sendmail() {
+
+    var name = $('#Name').val();
+    var email = $('#Email').val();
+    var subject = $('#Subject').val();
+    var message = $('#Message').val();
+
+    // var body = $('#body').val();
+
+    var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+    //console.log(name, phone, email, message);
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "portfolio273@gmail.com",
+        Password: "624B386D0C198599B8D94B768D3AF583D714",
+        To: 'portfolio273@gmail.com',
+        From: 'portfolio273@gmail.com',
+        Subject: "New message on contact from " + name,
+        Body: Body
+    }).then(
+        message => {
+            //console.log (message);    
+            if (message == 'OK') {
+                console.log("Success")
+                alert('Your mail has been send. Thank you for connecting.');
+            }
+            else {
+                console.error(message);
+                alert('There is error at sending message. ')
+
+            }
+
+        }
+    );
+
+
+
+}

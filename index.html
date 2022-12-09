@@ -361,23 +361,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="javascript:sendmail()">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" name="Name" id="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="Email" id="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" required name="Subject" id="Subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." required name="Message" id="Message"></textarea>
                         </div>
                         <div class="button-area">
-                            <button class='bb' type="submit">Send message</button>
+                            <button class='bb' type="submit" >Send message</button>
                         </div>
                     </form>
                 </div>
@@ -389,6 +389,7 @@
         <span>Created By Rahul Teli</span>
     </footer>
     <script src="portf.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
