@@ -136,7 +136,7 @@ function sendmail() {
         Host: "smtp.elasticemail.com",
         Username: "portfolio273@gmail.com",
         Password: "624B386D0C198599B8D94B768D3AF583D714",
-        To: 'portfolio273@gmail.com',
+        To: 'attendancesystem276@gmail.com',
         From: 'portfolio273@gmail.com',
         Subject: "New message on contact from " + name,
         Body: Body
