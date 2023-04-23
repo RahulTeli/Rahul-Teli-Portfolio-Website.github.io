@@ -647,7 +647,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width:1068px) {
+@media (min-width:1059px) {
        .logo{
         margin-right: 100px;
         width: 0;
