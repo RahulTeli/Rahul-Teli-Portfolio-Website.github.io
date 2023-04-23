@@ -647,6 +647,52 @@ footer span a:hover{
     }
 }
 
+@media (max-width:1068px) {
+       .logo{
+        margin-right: 100px;
+        width: 0;
+       }
+       .menu{
+        width: 800px;
+        margin-left: 50px;
+        
+        }
+        .menu li{
+            padding: 0px;
+        }
+     
+}
+@media (max-width: 1058px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
