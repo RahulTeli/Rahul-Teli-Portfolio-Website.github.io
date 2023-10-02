@@ -24,7 +24,7 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
+/* -----------all similar content styling codes------------- */
 section{
     padding: 100px 0;
 }
@@ -80,7 +80,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* ----------------navbar styling ----------------*/
 .navbar{
     position: fixed;
     width: 100%;
@@ -129,7 +129,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/*----------------- menu btn styling--------------- */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -165,7 +165,7 @@ section .title::after{
 }
 
 
-/* home section styling */
+/* ------------------home section styling---------------- */
 .home{
     display: flex;
     background: url("Images/banner.jpg") no-repeat center;
@@ -217,7 +217,7 @@ section .title::after{
 }
 
 
-/* about section styling */
+/*----------------- about section styling ---------------------*/
 .about .title::after{
     content: "Who am I";
 }
@@ -260,7 +260,19 @@ section .title::after{
     color: crimson;
     background: none;
 }
-
+#I img:hover
+{
+    cursor: pointer;
+    animation: rotation 4s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 /* ----------------------   project section styling ------------------------- */
 .services, .academics{
     color:#fff;
@@ -357,7 +369,7 @@ section .title::after{
 
 
 
-/* skills section styling */
+/* ---------------skills section styling ------------------*/
 
 
 .container
@@ -444,7 +456,7 @@ section .title::after{
 
 
 
-/* academics section styling */
+/* --------------------academics section styling-------------- */
 
 .academics .title
 {
@@ -481,7 +493,7 @@ section .title::after{
 
 }
 
-/* certificates section styling */
+/* ---------------certificates section styling------------ */
 
 .certificates .title
 {
@@ -527,7 +539,7 @@ section .title::after{
 
 
 
-/* contact section styling */
+/* -----------------contact section styling -----------------*/
 .contact .title::after{
     content: "Get in Touch";
 }
@@ -622,7 +634,7 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
+/* -------------------footer section styling---------------- */
 footer{
     background: #111;
     padding: 15px 23px;
@@ -640,6 +652,22 @@ footer span a:hover{
 
 /* responsive media query start */
 
+@media (min-width:1059px) {
+    .logo{
+     margin-right: 100px;
+     width: 0;
+    }
+    .menu{
+     width: 800px;
+     margin-left: 50px;
+     
+     }
+     .menu li{
+         padding: 0px;
+     }
+      
+}
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -647,20 +675,21 @@ footer span a:hover{
     }
 }
 
-@media (min-width:1059px) {
-       .logo{
-        margin-right: 100px;
-        width: 0;
-       }
-       .menu{
-        width: 800px;
-        margin-left: 50px;
-        
-        }
-        .menu li{
-            padding: 0px;
-        }
-     
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    .container
+    {
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+    }
+    .carrd{
+        margin-left: auto ;
+        margin-right: auto;
+        margin-top: auto;
+    }
+
 }
 @media (max-width: 1058px){
     .menu-btn{
@@ -692,22 +721,6 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-}
-@media (max-width: 991px) {
-    .max-width{
-        padding: 0 50px;
-    }
-    .container
-    {
-        grid-template-columns: repeat(2,1fr);
-        padding: 2rem 50px;
-    }
-    .carrd{
-        margin-left: auto ;
-        margin-right: auto;
-        margin-top: auto;
-    }
-
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -801,11 +814,13 @@ footer span a:hover{
         font-size: 15px;
         text-align: left;
     }
+   
 }
 @media (max-width:768px) {
     .grid{
         grid-template-columns: repeat(2,1fr);
     }
+    
 }
 
 
