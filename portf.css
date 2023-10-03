@@ -544,7 +544,7 @@ section .title::after{
     content: "Get in Touch";
 }
 .contact{
-    height: 900px;
+    height: 1000px;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
