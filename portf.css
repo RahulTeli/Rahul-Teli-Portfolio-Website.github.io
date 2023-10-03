@@ -823,6 +823,9 @@ footer span a:hover{
         font-size: 15px;
         text-align: left;
     }
+     .contact .cont-col{
+        margin-top: 0px;
+    }
    
 }
 @media (max-width:768px) {
