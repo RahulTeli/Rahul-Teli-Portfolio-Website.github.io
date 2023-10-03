@@ -546,6 +546,10 @@ section .title::after{
 .contact{
     height: 1000px;
 }
+.cont-col
+{
+    margin-top: 60px;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
