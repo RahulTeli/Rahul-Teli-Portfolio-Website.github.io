@@ -544,7 +544,7 @@ section .title::after{
     content: "Get in Touch";
 }
 .contact{
-    margin-bottom:35px;
+    height: 900px;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -798,7 +798,8 @@ footer span a:hover{
         width: 100%;
     }
     .table tr {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        border-top:2px solid #e1e0e6;
     }
     .table tbody tr td
     {
